@@ -1,9 +1,9 @@
 import React from 'react'
-import { BsHandbag,BsHeartFill } from "react-icons/bs";
+import { BsHandbag } from "react-icons/bs";
 import { MdOutlineAccountCircle } from "react-icons/md";
 import { FiSearch } from "react-icons/fi";
 import { Link } from 'react-router-dom';
-
+import { IoMdHeartEmpty } from "react-icons/io";
 const Header = () => {
   return (
     <header className='border-b-[1px] '>
@@ -15,8 +15,8 @@ const Header = () => {
       </div>
       <ul className='flex flex-1 self-center justify-center align-middle gap-11 '>
         <li className=' self-center '><Link to="/account/"><MdOutlineAccountCircle className='text-2xl transition-all text-gray-600 hover:text-blue-500'/></Link></li>
-        <li className=' self-center '><Link to="/account/"><BsHeartFill className='text-xl transition-all text-gray-600 hover:text-blue-500'/></Link></li>
-        <li className=' self-center '><Link to="/account/"><BsHandbag className='text-2xl transition-all text-gray-600 hover:text-blue-500'/></Link></li>
+        <li className=' self-center '><Link to="/account/"><IoMdHeartEmpty className='text-2xl transition-all text-gray-600 hover:text-blue-500'/></Link></li>
+        <li className=' self-center '><Link to="/account/"><BsHandbag className='text-xl transition-all text-gray-600 hover:text-blue-500'/></Link></li>
       </ul>
       </div>
     </header>

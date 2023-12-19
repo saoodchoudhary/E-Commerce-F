@@ -9,7 +9,8 @@ const HomePage = () => {
     <div>
       <Navbar/>
       <Header/>
-      <Outlet/>
+      <div className='min-h-[100vh]'>
+      <Outlet/></div>
       <Footer/>
     </div>
   )
